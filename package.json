@@ -1,0 +1,31 @@
+{
+  "name": "shopping-car",
+  "version": "1.0.0",
+  "description": "A project: - Where the user can add, delete and see the courses that they want to get into the shopping cart. - The courses will storage in Local Storage. - The shopping car will load the information storage into local Storage when the user visits the site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karlafgl/shopping-car.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karlafgl/shopping-car/issues"
+  },
+  "homepage": "https://github.com/karlafgl/shopping-car#readme",
+  "dependencies": {
+    "gulp-cli": "^2.2.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-sass": "^4.0.2"
+  },
+  "browserslist":[
+    "> 1%",
+    "last 2 versions"
+  ]
+}
