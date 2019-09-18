@@ -6,7 +6,7 @@ function css(){
   return gulp
     .src('scss/app.scss')
     .pipe(autoprefixer({
-      browsers: ['last 2 versions'],
+      overrideBrowserslist: ['last 2 versions'],
       cascade: false
     }))
     .pipe(sass({
@@ -15,5 +15,12 @@ function css(){
     .pipe(gulp.dest('css'));
 }
 
+//function que vigilara por cambios en los archivos
+function watchFiles(){
+  gulp.watch('scss/*scss', css);
+  gulp.watch('index.html');
+}
+
 //Registrar funciones como tareas 
 gulp.task('css', css);
+gulp.task('watch', gulp.parallel(watchFiles));
