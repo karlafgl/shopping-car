@@ -132,6 +132,7 @@ body {
        background-size: 2.3rem;
        text-align: center;
 
+       //iconos test despues borar este comentario 
        &.icono1 {
         @include background-imagen('../img/icono1.png');
        }
